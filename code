@@ -1,0 +1,16 @@
+static void Main(string[] args)
+ {
+ byte[] arshiya = new byte[15];
+ byte count;
+ for (byte i = 0; i <15; i++)
+ {
+ Console.Write("sath shayestegi ra az 1 ta 3 vared konid : ");
+ arshiya[i] = byte.Parse(Console.ReadLine());
+ }
+ count = 0;
+ foreach (byte j in arshiya)
+ if (j == 1)
+ count++;
+ Console.WriteLine("tedad honar joyan sath 1 shayestegi :{0} mi bashad .",count);
+ Console.ReadKey();
+ }
